@@ -9,20 +9,39 @@ The design is strictly based on the provided [Figma specification](https://www.f
 ## 📁 File Structure
 
 ```text
-/
-├── public/
-│   ├── index.html          # Login view (Entry point)
-│   ├── register.html       # User registration view
-│   ├── tasks.html          # Task management (User)
-│   ├── profile.html        # User profile & settings
-│   ├── dashboard.html      # Admin dashboard & metrics
-│   └── styles.css          # Global custom styles
-├── js/
-│   ├── auth.js             # Login/Register & Session logic
-│   ├── tasks.js            # Task CRUD operations
-│   ├── admin.js            # Dashboard metrics & global control
-│   └── api.js              # JSON Server communication
-└── db.json                 # Mock Database
+CRUDTASK/
+├── assets/                 # Recursos estáticos
+│   ├── css/
+│   │   └── styles.css      # Estilos globales y personalizados
+│   ├── img/                # Imágenes y logos
+│   └── js/                 # Lógica del frontend
+│       ├── api/
+│       │   └── client.js   # Configuración de Fetch/Axios para JSON Server
+│       ├── auth/
+│       │   ├── login.js    # Lógica de inicio de sesión
+│       │   └── register.js # Lógica de registro
+│       ├── modules/
+│       │   ├── admin/
+│       │   │   ├── dashboard.js
+│       │   │   └── manage-tasks.js
+│       │   └── user/
+│       │       ├── tasks.js
+│       │       └── profile.js
+│       └── utils/
+│           ├── storage.js  # Helpers para LocalStorage/SessionStorage
+│           └── guards.js   # Protección de rutas por rol
+├── pages/                  # Vistas HTML (excepto index.html)
+│   ├── admin/
+│   │   ├── dashboard.html
+│   │   └── manage-tasks.html
+│   └── user/
+│       ├── tasks.html
+│       └── profile.html
+├── data/
+│   └── db.json             # Tu base de datos para JSON Server
+├── index.html              # Punto de entrada (Login/Registro)
+├── .gitignore              # Ignorar node_modules y otros
+└── README.md            # Mock Database
 
 ```
 
