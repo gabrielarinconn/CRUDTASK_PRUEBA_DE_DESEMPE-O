@@ -99,7 +99,9 @@ Ensure you have Node.js installed, then run:
 npm install -g json-server
 
 # Run the database
-json-server --watch db.json --port 3000
+json-server --watch db.json --port 3001
+or
+npx json-server --watch db.json --port 3001
 
 ```
 
