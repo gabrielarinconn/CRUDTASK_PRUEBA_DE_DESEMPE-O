@@ -10,16 +10,16 @@ The design is strictly based on the provided [Figma specification](https://www.f
 
 ```text
 CRUDTASK/
-├── assets/                 # Recursos estáticos
+├── assets/                 # Static resources
 │   ├── css/
-│   │   └── styles.css      # Estilos globales y personalizados
-│   ├── img/                # Imágenes y logos
-│   └── js/                 # Lógica del frontend
+│   │   └── styles.css      # Global and custom styles
+│   ├── img/                # Images and logos
+│   └── js/                 # Frontend logic
 │       ├── api/
-│       │   └── client.js   # Configuración de Fetch/Axios para JSON Server
+│       │   └── client.js   # Fetch/Axios config for JSON Server
 │       ├── auth/
-│       │   ├── login.js    # Lógica de inicio de sesión
-│       │   └── register.js # Lógica de registro
+│       │   ├── login.js    # Login logic
+│       │   └── register.js # Registration logic
 │       ├── modules/
 │       │   ├── admin/
 │       │   │   ├── dashboard.js
@@ -28,9 +28,9 @@ CRUDTASK/
 │       │       ├── tasks.js
 │       │       └── profile.js
 │       └── utils/
-│           ├── storage.js  # Helpers para LocalStorage/SessionStorage
-│           └── guards.js   # Protección de rutas por rol
-├── pages/                  # Vistas HTML (excepto index.html)
+│           ├── storage.js  # LocalStorage/SessionStorage helpers
+│           └── guards.js   # Role-based route protection
+├── pages/                  # HTML views (except index.html)
 │   ├── admin/
 │   │   ├── dashboard.html
 │   │   └── manage-tasks.html
@@ -38,10 +38,10 @@ CRUDTASK/
 │       ├── tasks.html
 │       └── profile.html
 ├── data/
-│   └── db.json             # Tu base de datos para JSON Server
-├── index.html              # Punto de entrada (Login/Registro)
-├── .gitignore              # Ignorar node_modules y otros
-└── README.md            # Mock Database
+│   └── db.json             # JSON Server database file
+├── index.html              # Entry point (Login/Register)
+├── .gitignore              # Files to ignore (node_modules, etc.)
+└── README.md               # Project documentation
 
 ```
 
