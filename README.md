@@ -9,7 +9,8 @@ The design is strictly based on the provided [Figma specification](https://www.f
 ## 📁 File Structure
 
 ```text
-SIMULACRO-UNIVERSIDAD/
+CRUDTASK_PRUEBA_DE_DESEMPE-O
+//
 ├── .vscode/
 ├── app/
 │   ├── mi-app/
