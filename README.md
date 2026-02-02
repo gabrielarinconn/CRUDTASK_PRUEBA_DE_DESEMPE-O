@@ -120,6 +120,26 @@ Open `public/index.html` in your browser using a local server (like Live Server 
 > 
 > 
 
+### 2. 🚀 Getting Started with Vite
+
+Follow these steps to set up and run the project locally.
+
+## 1. Prerequisites Before Installing Vite
+
+You must have the following installed:
+✅ **Node.js**
+
+To verify your installation, open your terminal and run the following commands:
+
+```bash
+node -v
+# Expected output: v18.0.0 (or similar version)
+
+npm -v
+# Verify npm version
+```
+
+
 ## 📝 Technical Notes
 
 * **API Base:** `http://localhost:3000`
