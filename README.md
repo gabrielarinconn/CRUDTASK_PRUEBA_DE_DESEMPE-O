@@ -9,39 +9,41 @@ The design is strictly based on the provided [Figma specification](https://www.f
 ## 📁 File Structure
 
 ```text
-CRUDTASK/
-├── assets/                 # Static resources
-│   ├── css/
-│   │   └── styles.css      # Global and custom styles
-│   ├── img/                # Images and logos
-│   └── js/                 # Frontend logic
-│       ├── api/
-│       │   └── client.js   # Fetch/Axios config for JSON Server
-│       ├── auth/
-│       │   ├── login.js    # Login logic
-│       │   └── register.js # Registration logic
-│       ├── modules/
-│       │   ├── admin/
-│       │   │   ├── dashboard.js
-│       │   │   └── manage-tasks.js
-│       │   └── user/
-│       │       ├── tasks.js
-│       │       └── profile.js
-│       └── utils/
-│           ├── storage.js  # LocalStorage/SessionStorage helpers
-│           └── guards.js   # Role-based route protection
-├── pages/                  # HTML views (except index.html)
-│   ├── admin/
-│   │   ├── dashboard.html
-│   │   └── manage-tasks.html
-│   └── user/
-│       ├── tasks.html
-│       └── profile.html
-├── data/
-│   └── db.json             # JSON Server database file
-├── index.html              # Entry point (Login/Register)
-├── .gitignore              # Files to ignore (node_modules, etc.)
-└── README.md               # Project documentation
+SIMULACRO-UNIVERSIDAD/
+├── .vscode/
+├── app/
+│   ├── mi-app/
+│   │   ├── public/
+│   │   │   └── vite.svg
+│   │   ├── src/
+│   │   │   ├── counter.js
+│   │   │   ├── javascript.svg
+│   │   │   ├── main.js
+│   │   │   └── style.css
+│   │   ├── .gitignore
+│   │   ├── index.html
+│   │   └── package.json
+│   ├── node_modules/
+│   └── templates/
+│       ├── pages/
+│       │   ├── courses.html
+│       │   ├── home.html
+│       │   ├── login.html
+│       │   ├── payments.html
+│       │   ├── register.html
+│       │   ├── reports.html
+│       │   ├── settings.html
+│       │   └── students.html
+│       ├── partials/
+│       ├── .gitignore
+│       ├── db.json
+│       ├── index.html
+│       ├── json.txt
+│       ├── main.js
+│       ├── package-lock.json
+│       ├── package.json
+│       ├── styles.css
+│       └── vite.txt
 
 ```
 
