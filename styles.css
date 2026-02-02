@@ -1,0 +1,295 @@
+:root{
+  --bg:7B8794;
+  --card:#ffffff;
+  --text:#222;
+  --muted:#7a7a7a;
+  --line:#ececec;
+  --accent:#1778FF;
+  --accent2:#ffd166;
+  --danger:#d9534f;
+  --shadow:0 10px 30px rgba(0,0,0,.10);
+  --radius:14px;
+}
+
+.badge{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:800;
+  border:1px solid #e5e5e5;
+  background:#fff;
+}
+.badge.ok{ background:#e9f8ef; border-color:#bfe8cc; }
+.badge.wait{ background:#fff6e0; border-color:#ffe2a6; }
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* ===== LOGO ===== */
+.main-container {
+  display: flex;
+  flex-direction: column; /* Apila logo sobre login */
+  align-items: center;    /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente en la pantalla */
+  min-height: 100vh;      /* Ocupa toda la altura visual */
+  background: radial-gradient(circle at 30% 30%, #ffffff, #ffffff);
+}
+
+.brand-logo {
+  display: block;
+  margin-bottom: 0; /* Elimina espacio inferior del logo */
+}
+
+/* ===== LOGIN ===== */
+.login-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: radial-gradient(circle at 30% 30%, #ffffff, #ffffff);
+  padding:24px;
+}
+
+.login-card{
+  width:min(420px, 92vw);
+  background:var(--card);
+  border-radius:18px;
+  box-shadow:var(--shadow);
+  padding:28px 26px;
+}
+
+.field{margin:10px 0}
+label{
+  display:block;
+  font-size:12px;
+  color:var(--muted);
+  margin:0 0 6px
+}
+
+input, select{
+  width:100%;
+  padding:11px 12px;
+  border-radius:12px;
+  border:1px solid #ddd;
+  outline:none;
+  background:#fff;
+}
+
+input:focus, select:focus{border-color:var(--accent2)}
+
+button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  border:none;
+  cursor:pointer;
+  border-radius:12px;
+  padding:12px 14px;
+  font-weight:800;
+}
+
+.btn-primary{background:var(--accent); color:#fff;}
+.btn-primary:hover{filter:brightness(.96)}
+.btn-ghost{background:#fff;border:1px solid #ddd}
+.btn-danger{background:var(--danger); color:#fff;}
+.btn-small{padding:8px 10px;border-radius:10px;font-size:12px}
+
+.error{
+  margin-top:10px;
+  color:#b00020;
+  font-size:13px;
+  text-align:center;
+  min-height:18px;
+}
+
+/* ===== APP LAYOUT ===== */
+.layout{display:flex; min-height:100vh;}
+
+/* sidebar fijo */
+.sidebar{
+  position:fixed;
+  top:0; left:0;
+  width:250px;
+  height:100vh;
+  background:#f0ece6;
+  padding:18px 16px;
+  border-right:1px solid var(--line);
+}
+
+.brand{
+  display:flex; align-items:center; gap:10px;
+  font-weight:900;
+  margin:6px 6px 16px;
+}
+.brand .bar{width:4px;height:18px;background:var(--accent);border-radius:10px}
+
+.profile{
+  display:flex; flex-direction:column; align-items:center;
+  padding:16px 10px;
+  gap:8px;
+}
+.avatar{
+  width:72px;height:72px;border-radius:50%;
+  background:linear-gradient(135deg,#ddd,#bbb);
+  display:grid;place-items:center;
+  font-weight:900;color:#555;
+}
+.profile .name{font-weight:800}
+.profile .role{color:var(--accent); font-weight:900; font-size:12px}
+
+.nav{
+  margin-top:10px;
+  display:flex; flex-direction:column; gap:6px;
+}
+.nav a{
+  text-decoration:none;
+  color:#333;
+  padding:10px 12px;
+  border-radius:12px;
+  display:flex; align-items:center; justify-content:space-between;
+}
+.nav a:hover{background:#fff}
+.nav a.active{background:var(--accent); color:#fff}
+.lock{font-size:12px; opacity:.8}
+
+/* main con margen para sidebar */
+.main{
+  margin-left:250px;
+  width:calc(100% - 250px);
+  padding:18px 22px 40px;
+}
+
+/* topbar */
+.topbar{
+  height:56px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding:0 6px 10px;
+}
+.search{
+  flex:1;
+  max-width:520px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background:#fff;
+  border:1px solid #e5e5e5;
+  border-radius:14px;
+  padding:10px 12px;
+}
+.search input{
+  border:none;
+  padding:0;
+  outline:none;
+}
+.pill{
+  background:#fff;
+  border:1px solid #e5e5e5;
+  padding:10px 12px;
+  border-radius:14px;
+  font-size:12px;
+  color:#555;
+}
+
+/* ===== CONTENT ===== */
+h1,h2{margin:8px 0 14px}
+
+.cards{
+  display:grid;
+  grid-template-columns: repeat(4, minmax(160px, 1fr));
+  gap:14px;
+}
+
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.06);
+  border:1px solid var(--line);
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  min-height:86px;
+}
+.card .label{color:var(--muted); font-size:12px; font-weight:700}
+.card .value{font-size:22px; font-weight:900}
+.card.accent{background: linear-gradient(135deg, #ffcf40, #f6a400); color:#111;}
+.card.accent .label{color:#222}
+
+.panel{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow: 0 4px 14px rgba(0,0,0,.06);
+  padding:16px;
+}
+
+.row{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:flex-end;
+}
+
+/* tables */
+.table{
+  width:100%;
+  border-collapse:collapse;
+  overflow:hidden;
+  border-radius:14px;
+  border:1px solid var(--line);
+}
+.table th, .table td{
+  padding:12px 12px;
+  border-bottom:1px solid var(--line);
+  font-size:13px;
+}
+.table th{
+  color:var(--muted);
+  text-transform:uppercase;
+  font-size:11px;
+  letter-spacing:.5px
+}
+.table tr:last-child td{border-bottom:none}
+
+/* ===== MODAL (si ya lo usas en Students CRUD) ===== */
+.modal-backdrop{
+  position:fixed; inset:0;
+  background:rgba(0,0,0,.35);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+}
+.modal{
+  width:min(560px, 96vw);
+  background:#fff;
+  border-radius:16px;
+  box-shadow:var(--shadow);
+  padding:16px;
+}
+.modal-header{
+  display:flex; align-items:center; justify-content:space-between;
+  margin-bottom:10px;
+}
+.modal-title{font-weight:900}
+.modal-actions{
+  display:flex; gap:8px; justify-content:flex-end; margin-top:12px
+}
+
+
+@media (max-width: 980px){
+  .cards{grid-template-columns: repeat(2, minmax(160px, 1fr));}
+}
+@media (max-width: 640px){
+  .sidebar{width:220px}
+  .main{margin-left:220px; width:calc(100% - 220px)}
+}

@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@gmail.com",
+      "password": "1234",
+      "role": "ADMIN",
+      "name": "Admin"
+    },
+    {
+      "id": "2",
+      "email": "student@gmail.com",
+      "password": "1234",
+      "role": "STUDENT",
+      "name": "Student"
+    },
+    {
+      "id": "915a",
+      "name": "Gavi",
+      "email": "gavi@gmail.com",
+      "password": "1234",
+      "role": "STUDENT"
+    }
+  ],
+  "students": [
+    {
+      "id": "2",
+      "name": "Maya",
+      "email": "maya@gmail.com",
+      "phone": "9887766554",
+      "enrollNumber": "7788990011223344",
+      "admissionDate": "2022-03-14"
+    }
+  ],
+  "payments": [
+    {
+      "id": "1",
+      "studentName": "Karthi",
+      "schedule": "First",
+      "billNumber": "0007223",
+      "amountPaid": 35000,
+      "balance": 55000,
+      "date": "2021-12-08",
+      "status": "PENDING"
+    }
+  ],
+  "courses": [
+    {
+      "id": "c223",
+      "title": "java",
+      "durationWeeks": 4,
+      "fee": 123456
+    },
+    {
+      "id": "06f9",
+      "title": "dfgasdf",
+      "durationWeeks": 4,
+      "fee": 0
+    },
+    {
+      "id": "c1ac",
+      "title": "Math",
+      "durationWeeks": 4,
+      "fee": 0
+    }
+  ]
+}

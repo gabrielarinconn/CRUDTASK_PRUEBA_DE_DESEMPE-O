@@ -1,0 +1,9 @@
+2. Instalación local en el proyecto (npm i -D json-server)
+
+📌 Ejemplo
+npm install -D json-server
+
+
+Y luego:
+
+npx json-server --watch db.json --port 3000 ese numero al final se puede cambiar 

@@ -1,0 +1,62 @@
+✅ 1. Requisitos antes de instalar Vite
+Debes tener instalado:
+✅ Node.js
+
+Para comprobarlo abre la terminal y escribe:
+
+node -v
+
+
+Debe salir algo como:
+
+v18.0.0
+
+
+También revisa npm:
+
+npm -v
+
+
+✅ Si no tienes Node, descárgalo aquí:
+https://nodejs.org
+
+✅ 2. Crear un proyecto Vite desde cero
+
+En la terminal escribe:
+
+npm create vite@latest
+
+
+Te hará preguntas como:
+
+Nombre del proyecto:
+project-name: mi-app
+
+Framework:
+
+Vanilla ✅ (HTML + JS)
+
+React
+
+Vue
+
+etc.
+
+Ejemplo selecciona:
+
+Vanilla
+JavaScript
+
+✅ 3. Entrar a la carpeta creada
+cd mi-app
+
+✅ 4. Instalar dependencias
+npm install
+
+
+Esto crea la carpeta:
+
+node_modules/
+
+✅ 5. Levantar el servidor de Vite (modo desarrollo)
+npm run dev
